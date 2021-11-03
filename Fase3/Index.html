@@ -1,96 +1,90 @@
 <!DOCTYPE HTML>
 <html lang="es">
-    <style type="text/css">
-	* {
-				margin:0px;
-				padding:0px;
-			}
-			
-			#header {
-				margin:auto;
-				width:500px;
-				font-family:Arial, Helvetica, sans-serif;
-			}
-			
-			ul, ol {
-				list-style:none;
-			}
-			
-			.nav > li {
-				float:left;
-			}
-			
-			.nav li a {
-				background-color:#000;
-				color:#fff;
-				text-decoration:none;
-				padding:10px 12px;
-				display:block;
-			}
-			
-			.nav li a:hover {
-				background-color:#434343;
-			}
-			
-			.nav li ul {
-				display:none;
-				position:absolute;
-				min-width:140px;
-			}
-			
-			.nav li:hover > ul {
-				display:block;
-			}
-			
-			.nav li ul li {
-				position:relative;
-			}
-			
-			.nav li ul li ul {
-				right:-140px;
-				top:0px;
-			}
-     </style>
-<div class="basic">
-    <head>
-
-    <title>Diseño web - YBAD </title>
-    <meta charset="UTF-8">
-    <meta name="description" content="Página inicial de diseño">
-    <nav id="menu">
-        <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Temas</a></li>
-            <ul>
-                <li><a href="#">Tema 1</a></li>
-                <li><a href="#">Tema 2</a></li> 
-            </ul>
-        <li><a href="#">Recursos Digitales</a></li>
-        <li><a href="#">Aprendizaje</a></li> 
-        </ul>
-    </nav>
-    </head>
+    <head><link rel="STYLESHEET" type="text/css" href="basico.css"></head>
+    
+          <header>
+            <nav>
+              <ul id="menu">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Temas</a>
+                  <ul>
+                    <li><a href="tema1.html">Estructura con CSS</a></li>
+                    <li><a href="tema2.html">Cascada y Herencia</a></li>
+                    <li><a href="tema3.html">Vincular el CSS y el HTML</a></li>
+                  </ul>  
+                </li>
+                <li><a href="">Recursos Digitales</a>
+                <ul>
+                    <li><a href="RecursoDigital1.html">Podcast</a></li> 
+                    </ul>  
+                
+                </li>
+                <li><a href="">Aprendizaje</a></li>
+              </ul>
+            </nav>
+          </header>
+<div></div>
+<div id="main-content">
     <body>
-        <section>
-            <h1>Propósito del Sitio</h1>
-            <p>El Propósito de este sitio es acercarnos a la creación moderna de aplicaciones web utilizando las herramientas estandar de la industria.</p>
-        </section>
+        <h1>Estructura y reglas de CSS</h1>
+        <div class="container" style="display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;padding: 4px;margin:2px">
+          <div class="left" style="padding: 4px">
+            <h2>CSS básico</h2>
+            <p>Como HTML, CSS (Cascading Style Sheets) u Hojas de estilo en cascada en español, no es realmente un lenguaje de programación, tampoco es un lenguaje de marcado. Es un lenguaje de hojas de estilo, es decir, te permite aplicar estilos de manera selectiva a elementos en documentos HTML. Por ejemplo, para seleccionar todos los elementos de párrafo en una página HTML y volver el texto dentro de ellos de color rojo.</p>
+         </div>
+         <div class="center" style="padding: 4px">
+            <h2>Sintaxis básica</h2>
+            <p>Selectores
+                Cualquier elemento HTML es un posible selector CSS1. El selector es simplemente el elemento que está conectado a un estilo particular. Por ejemplo, el selector en:
+                
+                P { text-indent: 3em }
+                es P.</p>
+         </div>
+         <div class="right" style="padding: 4px">
+            <h2>Agrupamiento</h2>
+            <p>A fin de disminuir declaraciones repetitivas dentro de hojas de estilo, se permite el agrupamiento de selectores y declaraciones. Por ejemplo, todos los encabezados en un documento podrían tener idénticas declaraciones mediante un agrupamiento:
 
-        <article>
-            <h1>Estructura de los CSS</h1>
-            <p>Los CSS son archivos que almacenan la imformación de los estilos que se aplican al sitio que estamos diseñando.</p>
-            <p>...</p>
-        
-        </article>     
-        <img src="MOCKUP.png" alt="MOCKUP">
-        <footer>
+                H1, H2, H3, H4, H5, H6 {
+                  color: red;
+                  font-family: sans-serif }</p>
+         </div>
+        </div>
+         <article>
+            <h1>Seudo-clases y seudo-elementos</h1>
+            <p>Las seudo-clases y los seudo-elementos son "clases" y "elementos" especiales reconocidos automáticamente por los navegadores que soportan CSS. Las seudo-clases distinguen entre los diferentes tipos de elementos (por ej., los enlaces visitados y los enlaces activos representan dos tipos de anclas). Los seudo-elementos se refieren a sub partes de elementos, como la primera letra de un párrafo.
 
+                Las reglas con seudo-clases o seudo-elementos toman la forma
+                
+                selector:seudo-clase { propiedad: valor }
+                o
+                
+                selector:seudo-elemento { propiedad: valor }
+                Las seudo-clases y seudo-elementos no deberían especificarse con el atributo CLASS de HTML. Las clases normales pueden usarse con seudo-clases y seudo-elementos de la siguiente manera:
+                
+                selector.clase:seudo-clase { propiedad: valor }
+                o
+                
+                selector.clase:seudo-elemento { propiedad: valor }</p>
+          
+          </article>     
+          <article>
+            <h1>Bibliografia</h1>
+            <p>CSS básico—Aprende sobre desarrollo web | MDN. (s. f.). Recuperado 2 de noviembre de 2021, de https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics
+            </p>
+            <p>Estructura y reglas de CSS. (s. f.). Recuperado 2 de noviembre de 2021, de https://www.htmlhelp.com/es/reference/css/structure.html
+            </p>
+          </article>           
+
+          <footer>
+    <br>
             <address>
-            Yeny Consuelo Muñoz<br>
-            yenycon@yahoo.com
+              Yeny Consuelo Muñoz<br>
+              yenycon@yahoo.com
             </address>
-        
-        </footer>
-    </body>
-</div>
+          
+          </footer>
+        </body>
+    </div>
+ 
 </html>

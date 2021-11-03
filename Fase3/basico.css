@@ -1,0 +1,102 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+header{
+  font-family: Helvetica;
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 40px;
+  position: fixed;
+}
+ul{
+  list-style: none;
+}
+#menu li>a{
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+#menu li>a:hover{
+  color: #000;
+  background-color: #eaeaea;
+}
+#menu>li{
+  float: left;
+  text-align:center
+}
+#menu>li>ul{
+  display: none;
+}
+#menu>li:hover>ul {
+  display:block;
+}
+
+body {
+	margin: 0;
+  margin-top: 40px;
+	padding: 8px;
+  
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+  position: absolute;
+	font-size: 12px;
+	line-height: 1.5em;}
+h1 {
+  font-family: Helvetica, Geneva, Arial,
+        SunSans-Regular, sans-serif;
+      color: rgba(1, 6, 14, 0.1);
+    text-align: center; margin-bottom: 15px; }
+
+        #main-content {
+          background: white;
+          width: 90%;
+          margin-top: 140px;
+          padding-top: 40px;
+          padding-left: 10px;
+          max-width: 980px;
+          margin: 20px auto;
+          box-shadow: 0 0 10px rgba(0,0,0,.1);
+        }
+        
+          #main-content header,
+          #main-content .content {
+            padding: 40px;
+          }
+        Y por último, con esto estilizaremos el pie de página:
+        
+        #main-footer {
+          background: #333;
+          color: white;
+          text-align: center;
+          padding: 20px;
+          margin-top: 40px;
+        }
+          #main-footer p {
+            margin: 0;
+          }
+          
+          #main-footer a {
+            color: white;
+          }
+
+          #container {
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+          }
+          #left {
+            display: grid;
+            background-color: #dc4d4d;
+          }
+          #center {
+            display: grid;
+            background-color: yellow;
+          }
+          #right {
+            display: grid;
+            background-color: #e8a2af;
+          }

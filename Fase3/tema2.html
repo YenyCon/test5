@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head><link rel="STYLESHEET" type="text/css" href="basico.css"></head>
+    <div id="main-content">
+        <article>
+            <h1>Cascada y herencia</h1>
+            <p>En primer lugar, debemos saber que algunas propiedades CSS se heredan desde los elementos padres a los elementos hijos, modificando el valor que tienen por defecto:
+</p><p>
+                body {
+                  color: green;    /* Color de texto */
+                }</p><p>
+                En el ejemplo anterior, aplicamos a la etiqueta HTML <body> el color de texto verde. En principio, esta propiedad aplicará dicho color a los textos que estén dentro de dicha etiqueta <body>.
+                Sin embargo, si tenemos más etiquetas dentro, como por ejemplo una etiqueta <div> con texto en su interior, si no tenemos aplicada una propiedad color a dicho elemento, veremos que también aparece en color verde. Esto ocurre porque la propiedad color es una de las propiedades CSS que, en el caso de no tener valor específico, hereda el valor de su elemento padre.
+            </p>
+            <h3>Valores especiales de herencia </h3>
+            <p>Además de los valores habituales de cada propiedad CSS, también podemos aplicar ciertos valores especiales que son comunes a todas las propiedades existentes. Con estos valores modificamos el comportamiento de la herencia en dicha propiedad:
+
+                Valor	Significado
+                inherit	Hereda el valor que tiene la misma propiedad CSS en su elemento padre.
+                initial	Establece el valor inicial que tenía la propiedad CSS inicialmente.
+                unset	Combinación de las dos anteriores: Hereda el valor del padre, y en caso de no existir, su valor inicial
+            </p>
+          </article> 
+        <article>
+            <h1>Bibliografia</h1>
+            <p>Herencia en CSS - CSS en español. (s. f.). Recuperado 2 de noviembre de 2021, de https://lenguajecss.com/css/introduccion/herencia-css/
+            </p>
+            <p>La Herencia en CSS. (s. f.). Recuperado 2 de noviembre de 2021, de https://codigofacilito.com/articulos/la-herencia-en-css
+
+            </p>
+          </article> 
+    </div>
+</html>>
