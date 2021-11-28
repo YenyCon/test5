@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dropdown menu ejemplo 1 - Bootstrap 3</title>
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class='container'>
+    <div class="dropdown">
+      <div class='btn-group'>
+        <!-- Configurar el botón dropdown -->
+        <button class='btn btn-info'>Inicio</button>
+        <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <!-- Configurar el botón dropdown -->
+
+        <!-- Lista de opciones -->
+        <ul class="dropdown-menu">
+          <li class="dropdown-header">Fase 3</li>
+          <li><a href="../fase3/index.html">Introduccion Fase 3</a></li>
+          <li><a href="../fase3/tema1.html">Estructura con CSS</a></li>
+          <li><a href="../fase3/tema2.html">Cascada y Herencia</a></li>
+          <li><a href="../fase3/tema3.html">Vincular el CSS y el HTML</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-header">Fase 4</li>
+          <li><a href="index.html">Introduccion Fase 4</a></li>
+        </ul>
+        <!-- Lista de opciones -->
+
+      </div>
+
+      <div class='btn-group'>
+        <!-- Configurar el botón dropdown -->
+        <button class='btn btn-info'>Temas</button>
+        <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <!-- Configurar el botón dropdown -->
+
+        <!-- Lista de opciones -->
+        <ul class="dropdown-menu">
+          <li class="dropdown-header">Fase 4</li>
+          <li><a href="tema1.html">Posicionamiento SEO</a></li>
+          <li><a href="tema2.html">Framework Boostrap</a></li>
+          <li><a href="tema3.html">Sitios Responsive</a></li>
+          <li class="divider"></li>
+          </li>
+          <li class="disabled"><a href="#">Desactivado</a></li>
+        </ul>
+        <!-- Lista de opciones -->
+      </div>
+
+      <div class='btn-group'>
+        <!-- Configurar el botón dropdown -->
+        <button class='btn btn-info'>Recursos Digitales</button>
+        <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <!-- Configurar el botón dropdown -->
+
+        <!-- Lista de opciones -->
+        <ul class="dropdown-menu">
+          <li class="dropdown-header">Fase 3</li>
+          <li><a href="../Fase3/RecursoDigital1.html">Podcast</a></li>
+          <li class="divider"></li>
+          <li class="dropdown-header">Fase 4</li>
+          <li><a href="#">Link 1</a></li>
+          </li>
+          <li class="disabled"><a href="#">Desactivado</a></li>
+        </ul>
+        <!-- Lista de opciones -->
+      </div>    
+      
+      <div class='btn-group'>
+        <!-- Configurar el botón dropdown -->
+        <button class='btn btn-info'>Aprendizaje</button>
+        <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+          <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <!-- Configurar el botón dropdown -->
+
+        <!-- Lista de opciones -->
+        <ul class="dropdown-menu">
+          <li class="dropdown-header">Formularios</li>
+          <li><a href="formulario.html">Formulario de Contacto</a></li>
+          <li><a href="formulario1.html">Formulario SEO</a></li>
+          <li class="divider"></li>
+          </li>
+          <li class="disabled"><a href="#">Desactivado</a></li>
+        </ul>
+        <!-- Lista de opciones -->
+      </div>        
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center"><h1>Páginas web utilizando un framework CSS aplicando estrategias de posicionamiento para el SEO</h1></div>
+      <div class="col-md-3">…   “una media query consiste en un tipo de medio y al menos una consulta que limita las hojas de estilo utilizando características del medio como ancho, alto y color.
+        <br>
+        Se entiende como un módulo CSS3 que permite adaptar la representación del contenido a características del dispositivo, lo que se conoce diseño líquido o responsive.” (Rincón, s. f.) </div>
+      <div class="col-md-9">
+        “Las media queries permiten a las páginas web utilizar diferentes declaraciones de estilo de la hoja de estilos en base al ancho de la pantalla del dispositivo en el que se visualiza el sitio web. En los diseños web responsive, una media query es una declaración CSS que se utiliza como parámetro para saber cuándo utilizar otra declaración de estilo en base a las dimensiones del dispositivo en donde se visualiza la página web. Hay dos maneras de utilizar una media query: utilizando una hoja de estilos externa o escribiendo directamente en la hoja de estilos.” (staffcreatica, 2016)
+       <br>
+        “Las media queries actúan como contenedor de las reglas y selectores a aplicar, por lo tanto, todo lo que engloba empieza con la apertura de una llave y termina con el cierre de la misma. En cuanto a la sintaxis, una media query siempre comienza con el indicador de @media, seguido de un mediatype.” (Media Queries en CSS ¿Cómo funcionan?, 2016) 
+      <br><br>  De acuerdo con los autores consultados,  los media queries son directrices que se le dan a la página web para que autoajuste los estilos que se encuentran en lenguaje css al tamaño de los dispositivos en los que se va a mostrar. Surge de la necesidad de tener un sitio web que responda principalmente al auge de los dispositivos móviles y con el fin de no tener dos páginas una para escritorio y otra para las aplicaciones móviles sino una sola que se auto adapte a la fácil usabilidad dentro de un pequeño equipo como el celular </div>
+
+      <div class="col-md-12 text-center"><h2>Bibliografía</h2></div>
+      <div class="col-md-12">staffcreatica. (2016, noviembre 14). Qué son las media queries en los diseños web responsive. Inercia Digital. https://blog.inerciadigital.com/2016/11/14/media-queries-disenos-web-responsive/
+        <br>
+        Media Queries en CSS ¿Cómo funcionan? • Silo Creativo. (2016, noviembre 23). Silo Creativo. https://www.silocreativo.com/media-queries-css/
+        <br>
+        Rincón, J. G. (s. f.). Diseño responsive con media-queries | Jairo García Rincón. Recuperado 20 de noviembre de 2021, de https://www.jairogarciarincon.com/clase/introduccion-a-las-aplicaciones-web-con-html5-css3-y-javascript/diseno-responsive-con-media-queries
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>
